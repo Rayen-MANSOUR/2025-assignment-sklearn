@@ -200,6 +200,7 @@ class MonthlySplit(BaseCrossValidator):
 
     def split(self, X, y, groups=None):
         """Generate indices to split data into training and test set.
+
         Parameters
         ----------
         X : array-like of shape (n_samples, n_features)
@@ -209,6 +210,7 @@ class MonthlySplit(BaseCrossValidator):
             Always ignored, exists for compatibility.
         groups : array-like of shape (n_samples,)
             Always ignored, exists for compatibility.
+
         Yields
         ------
         idx_train : ndarray
