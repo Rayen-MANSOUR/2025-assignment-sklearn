@@ -218,7 +218,6 @@ class MonthlySplit(BaseCrossValidator):
         idx_test : ndarray
             The testing set indices for that split.
         """
-
         time_index = self._get_time_index(X)
         positions = np.arange(len(time_index))
         months = time_index.to_period('M')
